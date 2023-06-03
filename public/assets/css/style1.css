@@ -1,0 +1,355 @@
+:root {
+  --golden-puppy: hsl(47, 100%, 49%);
+  --fs-7: 14px;
+  --white: hsl(0, 0%, 100%);
+}
+
+.company {
+  display: inline-flex;
+  align-items: center;
+}
+.im {
+  width: 80px;
+  height: 55px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: url("6.jpg") no-repeat ;
+    backdrop-filter: blur(6px); */
+  background-color: #1e2d6c;
+  /* background-color: rgb(134, 134, 134); */
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgb(135, 135, 135);
+  padding: 20px 80px;
+  /* background: black; */
+  display: flex;
+  /* background-color: white; */
+  opacity: 0.9;
+  /* backdrop-filter: blur(4px); */
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  user-select: none;
+}
+
+.logo p:hover {
+  cursor: pointer;
+}
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 40px;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+  height: 1px;
+  background: rgb(41, 202, 242);
+  transform: scaleX(0);
+  transform-origin: right;
+  border-radius: 5px;
+  transition: transform 0.5s;
+}
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .login {
+  width: 130px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 6px;
+  font-family: "Poppins";
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 1000;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.navigation .login:hover {
+  background: white;
+  color: black;
+
+  box-shadow: 0 0 30px rgb(36, 119, 168);
+}
+
+.wrapper {
+  margin-left: 15%;
+  position: relative;
+  width: 400px;
+  height: 380px;
+  background: transparent;
+  border: 1px solid rgb(36, 119, 168);
+  border-radius: 15px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 30px rgb(36, 119, 168);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.2s ease;
+  overflow: hidden;
+}
+
+.wrapper:hover {
+  box-shadow: 0 0 5px rgb(36, 119, 168), 0 0 20px rgb(36, 119, 168),
+    0 0 40px rgb(36, 119, 168);
+
+  /* transition-delay: 1s; */
+  background-color: hsl(290, 51%, 45%, 0.2);
+}
+
+.wrapper.active {
+  height: 520px;
+  width: 400px;
+}
+
+.wrapper .form-box {
+  width: 1001%;
+  padding: 40px;
+}
+
+.wrapper .form-box.login {
+  /* display: none; */
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+  /* display: none; */
+  width: 400px;
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+  /* display: none; */
+  width: 400px;
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper .icon-close {
+  border-bottom-left-radius: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: black;
+  font-size: 1.5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box h2 {
+  font-size: 1.7em;
+  color: white;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid white;
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  color: white;
+  width: 100%;
+  height: 80%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1em;
+  color: white;
+  padding-top: 15px;
+}
+
+.remember-forget {
+  font-size: 0.9em;
+  color: white;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forget label input {
+  accent-color: white;
+  margin-right: 3px;
+}
+
+.remember-forget a {
+  color: white;
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+}
+
+.login-register {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px 0;
+}
+
+.login-register a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p {
+  color: whitesmoke;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+/* login page about */
+
+.hero {
+  padding: 60px 0;
+}
+
+.hero .container {
+  max-width: 550px;
+  font-size: larger;
+}
+.hero-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  /* margin-left: 20px; */
+  font-size: 30px;
+  font-weight: bold;
+  text-align: start;
+  color: white;
+}
+
+.hero-title > span {
+  margin-right: 360px;
+  display: inline-block;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(255, 239, 59);
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text {
+  /* margin-left: 40px; */
+  text-align: start;
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn_btn-secondary {
+  align-items: start;
+  border: 1px solid #1e2d6c;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-right: 450px;
+  height: 50px;
+  width: 120px;
+}
+.space100 {
+  margin-bottom: 50px;
+}

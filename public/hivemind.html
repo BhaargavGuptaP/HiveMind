@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hive Mind</title>
+  </head>
+  <body>
+    <header>
+      <div class="name">
+        <img class="img1" src="assets/logo.png" alt="" />
+        <p>Hive Mind</p>
+      </div>
+
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <img class="img2" src="assets/boy.png" alt="" />
+          </li>
+          <li>
+            <p>0ibbu16t7289t1287tWEV45VWA4657Eb6t27tb89271y286t!</p>
+          </li>
+        </ul>
+        <div class="option">
+          <a href="metamask">
+            <button>
+              <img class="img" src="assets/fox.png" alt="" />
+            </button>
+          </a>
+          <a href="logout">
+            <button>
+              <img class="img" src="assets/exit.png" alt="" />
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="x">
+      <div class="navigation">
+        <ul>
+          <li class="list">
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="bulb-outline"></ion-icon
+              ></span>
+              <span class="title">Minds</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="telescope-outline"></ion-icon
+              ></span>
+              <span class="title">Hives</span>
+            </a>
+          </li>
+          <li class="list active">
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="person-outline"></ion-icon
+              ></span>
+              <span class="title">Profile</span>
+            </a>
+          </li>
+        </ul>
+        <li class="list1">
+          <a href="#">
+            <span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
+            <span class="title">Logout</span>
+          </a>
+        </li>
+      </div>
+      <div class="qqq">
+        <div class="full">
+          <h1>Browse our Art and Assets Gallery</h1>
+          <h2>Open to every Buyers and NFTs enthusiasts</h2>
+          <div class="p">
+            <h3>Connect with us Through</h3>
+            <h2 class="picasso">CryptoPicasso</h2>
+          </div>
+          <button class="button1">
+            <a href="http://localhost:3001/"> <p>Click here</p></a>
+          </button>
+        </div>
+      </div>
+      <!-- ////////////////////////////////////////////////////////// 2 -->
+      <div class="qqq">
+        <div class="form">
+          <form id="ideaForm">
+            <div class="form-group">
+              <label for="ideaTitle">Idea Title:</label>
+              <input type="text" id="ideaTitle" name="ideaTitle" required />
+            </div>
+            <div class="form-group">
+              <label for="ideaDescription">Idea Description:</label>
+              <textarea
+                id="ideaDescription"
+                name="ideaDescription"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="technicalField">Technical Field:</label>
+              <input
+                type="text"
+                id="technicalField"
+                name="technicalField"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="claims">Claims:</label>
+              <textarea id="claims" name="claims" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="walletAddress">Wallet Address:</label>
+              <input
+                type="text"
+                id="walletAddress"
+                name="walletAddress"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="documentUpload">Document Upload:</label>
+              <input
+                type="file"
+                id="documentUpload"
+                name="documentUpload"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <button type="submit" onclick="nxt()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="qqq">
+        <div class="cntnt">
+          <div class="subcon">
+            <div class="igcon">
+              <img src="assets/7.jpg" alt="nope" class="ig" />
+            </div>
+            <div class="ideadet" onclick="nxtpg()">
+              <div class="ideaname">IdeaName: Dream Catcher</div>
+              <div class="ideades">
+                Description: Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Cumque adipisci temporibus ipsa aliquam soluta
+                exercitationem possimus qui.
+              </div>
+              <div class="ideaprice">Price: 3.2 (ETH)</div>
+            </div>
+          </div>
+          <div class="txtcon">
+            <div class="txt" onclick="openPopup()">Invest</div>
+            <div class="popup" id="popup">
+              <h1>Invest</h1>
+              <input type="text" placeholder="7.2 ETH" class="inpbx" />
+              <button onclick="closePopup(); meta()" class="btnalrt">
+                Invest Now
+              </button>
+            </div>
+            <div class="txt">Buy Ownership</div>
+            <div class="txt">Plan Partial Ownership</div>
+          </div>
+        </div>
+        <div class="cntnt">
+          <div class="subcon">
+            <div class="igcon">
+              <img src="assets/7.jpg" alt="nope" class="ig" />
+            </div>
+            <div class="ideadet">
+              <div class="ideaname">IdeaName: FarmEasy</div>
+              <div class="ideades">
+                Description: Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Cumque adipisci temporibus ipsa aliquam soluta
+                exercitationem possimus qui.
+              </div>
+              <div class="ideaprice">Price: 3.2 (ETH)</div>
+            </div>
+          </div>
+          <div class="txtcon">
+            <div class="txt" onclick="openPopup()">Invest</div>
+            <div class="popup" id="popup">
+              <h1>Invest</h1>
+              <input type="text" placeholder="7.2 ETH" class="inpbx" />
+              <button onclick="closePopup()" class="btnalrt">Invest Now</button>
+            </div>
+            <div class="txt">Buy Ownership</div>
+            <div class="txt">Plan Partial Ownership</div>
+          </div>
+        </div>
+        <div class="cntnt">
+          <div class="subcon">
+            <div class="igcon">
+              <img src="assets/7.jpg" alt="nope" class="ig" />
+            </div>
+            <div class="ideadet">
+              <div class="ideaname">IdeaName: TinyJPG</div>
+              <div class="ideades">
+                Description: Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Cumque adipisci temporibus ipsa aliquam soluta
+                exercitationem possimus qui.
+              </div>
+              <div class="ideaprice">Price: 2.5 (ETH)</div>
+            </div>
+          </div>
+          <div class="txtcon">
+            <div class="txt" onclick="openPopup()">Invest</div>
+            <div class="popup" id="popup">
+              <h1>Invest</h1>
+              <input type="text" placeholder="7.2 ETH" class="inpbx" />
+              <button onclick="closePopup()" class="btnalrt">Invest Now</button>
+            </div>
+            <div class="txt">Buy Ownership</div>
+            <div class="txt">Plan Partial Ownership</div>
+          </div>
+        </div>
+        <div class="cntnt">
+          <div class="subcon">
+            <div class="igcon">
+              <img src="assets/7.jpg" alt="nope" class="ig" />
+            </div>
+            <div class="ideadet">
+              <div class="ideaname">IdeaName: Hive Mind</div>
+              <div class="ideades">
+                Description: Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Cumque adipisci temporibus ipsa aliquam soluta
+                exercitationem possimus qui.
+              </div>
+              <div class="ideaprice">Price: 7.2 (ETH)</div>
+            </div>
+          </div>
+          <div class="txtcon">
+            <div class="txt" onclick="openPopup()">Invest</div>
+            <div class="popup" id="popup">
+              <h1>Invest</h1>
+              <input type="text" placeholder="7.2 ETH" class="inpbx" />
+              <button onclick="closePopup()" class="btnalrt">Invest Now</button>
+            </div>
+            <div class="txt">Buy Ownership</div>
+            <div class="txt">Plan Partial Ownership</div>
+          </div>
+        </div>
+        <div id="ideanm"></div>
+        <div id="ideads"></div>
+        <div id="idepr"></div>
+        <div class="space"></div>
+      </div>
+      <!-- ////////////////////////////////////////////////////////// 4-->
+      <div class="qqq active">
+        <div class="opt">
+          <img class="img1" src="assets/rise.png" alt="" />
+          <h2>Overview</h2>
+        </div>
+        <div class="profile">
+          <div class="pic">
+            <img class="usrpic" src="assets/boy.png" alt="" />
+          </div>
+          <div>
+            <p>Welcome, John Doe</p>
+            <p>0ibbu16t7289t1287tWEV45VWA4657Eb6t27tb89271y286t!</p>
+            <div class="verified">
+              <img class="img1" src="assets/check 1.png" alt="" />
+              <p>Verified</p>
+            </div>
+          </div>
+        </div>
+        <div class="spends">
+          <div class="earn_crypto">
+            <h3>Investment tracks</h3>
+            <p>Total earnings</p>
+            <div class="q">
+              <img class="img" src="assets/ethereum.png" alt="" />
+              <p>68.7123</p>
+            </div>
+            <p>Total spending</p>
+            <div class="q">
+              <img class="img" src="assets/ethereum.png" alt="" />
+              <p>171.34</p>
+            </div>
+          </div>
+          <div class="earn_crypto">
+            <h3>Invested Amount</h3>
+            <p>Total invested</p>
+            <div class="q">
+              <img class="img" src="assets/ethereum.png" alt="" />
+              <p>56.723</p>
+            </div>
+            <p>Total returned</p>
+            <div class="q">
+              <img class="img" src="assets/ethereum.png" alt="" />
+              <p>71.04</p>
+            </div>
+          </div>
+        </div>
+        <div class="graph">
+          <h3>Graphical represntation</h3>
+          <img src="assets/Rectangle 7.png" alt="" />
+        </div>
+      </div>
+      <div class="nxpg">
+        <div class="cls" onclick="prvpg()">close</div>
+        <div class="ffcon">
+          <div class="fcon">
+            <div class="i1">
+              <img src="assets/7.jpg" alt="" class="nft" />
+            </div>
+            <div class="n1">
+              <div class="nameid">
+                <b>Idea Name:</b><br /><br /><s></s> HiveMind<br /><br />
+              </div>
+              <div class="descid">
+                <b>Idea Description: </b><br /><br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                consequatur velit nostrum perferendis ab consequuntur atque odio
+                repudiandae exercitationem eos?<br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="con2">
+            <div class="gig">
+              <div class="gcon"></div>
+              <div class="gcon"></div>
+              <div class="gcon"></div>
+              <div class="gcon"></div>
+              <div class="gcon"></div>
+            </div>
+            <div class="both">
+              <div class="txchid">
+                <div class="hdtechid">Technical Field</div>
+                <ul>
+                  <li>React</li>
+                  <li>Javascript</li>
+                  <li>Smart Contract</li>
+                  <li>Web3auth</li>
+                  <li>Polygon</li>
+                </ul>
+              </div>
+              <div class="clmid">
+                <div class="hdclmid">Claims</div>
+                <div class="clms">
+                  -> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, illum?
+                </div>
+                <div class="clms">
+                  -> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, illum?
+                </div>
+                <div class="clms">
+                  -> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, illum?
+                </div>
+                <div class="clms">
+                  -> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas, illum?
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="con3">
+            <div class="inv1" onclick="meta()">Invest</div>
+          </div>
+          <div class="con4">
+            <div class="flown">Buy Full Ownership</div>
+          </div>
+          <div class="con5">
+            <div class="hdpr">Partial Ownership</div>
+            <div class="conpr">
+              <div class="nm">Sam</div>
+              <div class="prnm">2 ETH</div>
+            </div>
+            <br />
+            <div class="conpr">
+              <div class="nm">Ram</div>
+              <div class="prnm">2 ETH</div>
+            </div>
+            <br />
+            <div class="conpr">
+              <div class="nm">Shyam</div>
+              <div class="prnm">2 ETH</div>
+            </div>
+            <br />
+            <div class="by1">
+              <div class="bysub">Buy Partial Ownership</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs-http-client/dist/index.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
+
+    <script>
+      let list = document.querySelectorAll(".list");
+      let cnt = document.querySelectorAll(".qqq");
+      let n = document.querySelectorAll(".nxpg");
+      function nxtpg() {
+        cnt[2].className = "qqq";
+        n[0].className = "nxpg active";
+      }
+      function prvpg() {
+        n[0].className = "nxpg";
+        cnt[2].className = "qqq active";
+      }
+      let z = document.querySelectorAll(".nxpg");
+      for (let i = 0; i < list.length; i++) {
+        list[i].onclick = function () {
+          let j = 0;
+          while (j < list.length) {
+            list[j++].className = "list";
+            // cnt[j++].className = "qqq";
+          }
+          list[i].className = "list active";
+          z[0].className = "nxpg";
+
+          let k = 0;
+          while (k < cnt.length) {
+            cnt[k++].className = "qqq";
+          }
+          cnt[i].className = "qqq active";
+        };
+      }
+      let popup = document.getElementById("popup");
+      let inv = document.querySelectorAll(".investor");
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function meta() {
+        {
+          if (typeof window.ethereum !== "undefined") {
+            // Metamask is installed
+            // Open Metamask
+            window.ethereum
+              .enable()
+              .then((accounts) => {
+                setval(0);
+                console.log("Metamask opened!");
+                console.log("Connected accounts:", accounts);
+              })
+              .catch((error) => {
+                // Failed to open Metamask
+                console.error("Failed to open Metamask:", error);
+              });
+          }
+        }
+      }
+      function closePopup() {
+        popup.classList.remove("open-popup");
+        alert("You are an Owner of this idea");
+      }
+    </script>
+  </body>
+</html>

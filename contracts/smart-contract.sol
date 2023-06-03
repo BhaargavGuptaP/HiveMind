@@ -23,7 +23,7 @@ contract ApprovalProcess {
     string public approved;
     address public contractAddress;
     address public creator;
-
+    //hvajvdja
     constructor(address _contractAddress) {
         contractAddress = _contractAddress;
         creator = msg.sender;
